@@ -1,0 +1,43 @@
+1. Explain the different types of linked lists (Singly Linked List, Doubly Linked List).
+
+    a. Singly Linked List
+        Structure: Each node contains data and a reference (or pointer) to the next node.
+        Traversal: Can be traversed only in one direction (from head to tail).
+        Memory Usage: Less memory compared to doubly linked lists as each node only has one pointer.
+    Operations:
+        Insertion/Deletion at the head: O(1)
+        Insertion/Deletion at the tail: O(n)
+        Search: O(n)
+
+    b. Doubly Linked List
+        Structure: Each node contains data, a reference to the next node, and a reference to the previous node.
+        Traversal: Can be traversed in both directions (from head to tail and tail to head).
+        Memory Usage: More memory compared to singly linked lists as each node has two pointers.
+        Operations:
+        Insertion/Deletion at the head: O(1)
+        Insertion/Deletion at the tail: O(1)
+        Search: O(n)
+
+2.  Analyze the time complexity of each operation.
+        addTask() => O(n) for Average/Worst case
+                     O(1) for Best case 
+        searchTask() => O(n) for Average/Worst case
+                        O(1) for Best case 
+        traverseTasks() => O(n)
+        deleteTask() => O(n) for Average/Worst case
+                        O(1) for Best case 
+
+3. Discuss the advantages of linked lists over arrays for dynamic data.
+
+    Dynamic Size:
+        Linked Lists: Can easily grow or shrink in size by allocating or deallocating nodes as needed.
+        Arrays: Fixed size once declared; resizing requires creating a new array and copying elements.
+    Efficient Insertions/Deletions:
+        Linked Lists: Inserting or deleting elements (especially at the beginning or middle) is efficient and can be done in O(1) time if the position is known.
+        Arrays: Inserting or deleting elements involves shifting elements, which can take O(n) time.
+    Memory Utilization:
+        Linked Lists: Use memory efficiently by allocating memory for each node as needed.
+        Arrays: Can waste memory if the array is not fully utilized or requires additional space if resized.
+    No Contiguous Memory Requirement:
+        Linked Lists: Nodes can be scattered in memory, eliminating the need for a large contiguous memory block.
+        Arrays: Require a contiguous block of memory, which can be a limitation in systems with fragmented memory.

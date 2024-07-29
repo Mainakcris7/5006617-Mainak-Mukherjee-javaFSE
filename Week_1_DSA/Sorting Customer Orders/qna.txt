@@ -1,0 +1,67 @@
+1. Explain various sorting algorithms.
+    Bubble Sort
+        Description: Repeatedly steps through the list, compares adjacent elements, and swaps them if they are in the wrong order.
+        Time Complexity:
+            Best Case: 
+            O(n) (when the array is already sorted)
+            Average Case: 
+            O(n^2)
+            Worst Case: 
+            O(n^2)
+
+    Insertion Sort
+        Description: Builds the final sorted array one item at a time by repeatedly picking the next item and inserting it into the correct position.
+        Time Complexity:
+        Best Case: 
+        O(n) (when the array is already sorted)
+        Average Case: 
+        O(n^2)
+        Worst Case: 
+        O(n^2)
+
+    Quick Sort
+        Description: Divides the array into two smaller sub-arrays (partitions) using a pivot element, then recursively sorts the sub-arrays.
+        Time Complexity:
+            Best Case: 
+            O(nlogn)
+            Average Case: 
+            O(nlogn)
+            Worst Case: 
+            O(n^2) (when the smallest or largest element is always chosen as the pivot)
+
+    Merge Sort
+        Description: Divides the array into halves, recursively sorts each half, and then merges the sorted halves back together.
+        Time Complexity:
+        Best Case: 
+        O(nlogn)
+        Average Case: 
+        O(nlogn)
+        Worst Case: 
+        O(nlogn)
+
+
+2.  Compare the performance (time complexity) of Bubble Sort and Quick Sort.
+    QuickSort:
+        Time Complexity:
+            Best Case: 
+            O(nlogn)
+            Average Case: 
+            O(nlogn)
+            Worst Case: 
+            O(n^2) 
+    Bubble Sort:
+        Time Complexity:
+            Best Case: 
+            O(n) (when the array is already sorted)
+            Average Case: 
+            O(n^2)
+            Worst Case: 
+            O(n^2)
+
+3. Discuss why Quick Sort is generally preferred over Bubble Sort.
+    Efficiency:
+        Bubble Sort: Its average and worst-case time complexity of O(n^2), makes it impractical for large datasets.
+        Quick Sort: It has an average time complexity of O(nlogn), making it much faster for large datasets.
+    Performance:
+        Bubble Sort: Performs a large number of swaps and comparisons, leading to slow performance even on moderately sized arrays.
+        Quick Sort: Efficiently partitions the array, reducing the number of comparisons and swaps needed.

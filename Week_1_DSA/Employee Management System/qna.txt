@@ -1,0 +1,35 @@
+1. Explain how arrays are represented in memory and their advantages.
+
+    Representation:
+        a. Arrays are stored in contiguous memory locations.
+        b. Each element is positioned at a fixed offset from the beginning of the array.
+        c. The memory address of the i-th element can be calculated as base_address + (i * size_of_element).
+    Advantages:
+        a. Direct Access: Elements can be accessed in constant time O(1) using their index. This makes retrieval very efficient compared to other data structures like linked lists.
+        b. Memory Efficiency: Arrays have no additional memory overhead per element, unlike linked lists which require extra memory for pointers.
+
+2. Analyze the time complexity of each operation (add, search, traverse, delete).
+
+    Add Operation:
+        Best Case (Appending): O(1). Adding an element to the end of an array (if there is space) is a constant-time operation.
+        Average Case: O(n). If the array is full, or insertion have to be done at middle indices, the array involves shifting or copying all elements, which takes O(n) time.
+
+    Search Operation:
+        Linear Search: O(n). In the worst case, you may need to check every element in the array to find the target.
+        Binary Search: O(logn) (only for sorted arrays). Divides the search interval in half each time, significantly reducing the number of comparisons.
+    Traverse Operation:
+        Traversal: O(n). Visiting each element in the array requires linear time.
+    Delete Operation:
+        Best Case: O(1) (deleting the last element). Removing the last element requires constant time.
+        Average/Worst Case: O(n). Deleting an element from the middle requires shifting all subsequent elements, which takes linear time.
+
+3. Discuss the limitations of arrays and when to use them.
+
+    a. Fixed Size:
+        Arrays have a fixed size defined at creation, which means you need to know the maximum number of elements in advance.
+        Resizing an array (when necessary) is costly as it involves creating a new array and copying elements.
+    b. Inefficient Insertions and Deletions:
+        Inserting or deleting elements from the middle of an array requires shifting elements, leading to O(n) time complexity.
+        This makes arrays less suitable for scenarios where frequent insertions and deletions are needed.
+    c. Contiguous Memory Requirement:
+        Arrays require a block of contiguous memory, which can be problematic for large arrays in systems with fragmented memory.

@@ -1,0 +1,29 @@
+1. Explain the concept of recursion and how it can simplify certain problems.
+
+    Definition: Recursion is a programming technique where a function calls itself directly or indirectly to solve a problem. The process involves breaking down a problem into smaller, more manageable sub-problems.
+
+    Key Concepts:
+        Base Case: The condition under which the recursion stops, preventing infinite calls.
+                   Recursive Case: The part where the function calls itself with modified arguments to work on a smaller piece of the problem.
+        Benefits:
+            Simplifies Complex Problems: Recursion can make code more intuitive and easier to understand for problems that can be naturally divided into similar sub-problems, such as tree traversal or factorial calculation.
+            Reduces Code Complexity: Often leads to cleaner and shorter code compared to iterative solutions.
+            
+    Example: Calculating factorials or traversing a directory structure.
+
+2. Discuss the time complexity of your recursive algorithm.
+    For the recursive algorithm, the recurrent relation is as follows:
+        T(n) = T(n-1) + 1
+        Easily, applying Master's Theorem for Decreasing Function, the time complexity is O(n).
+
+3. Explain how to optimize the recursive solution to avoid excessive computation.
+    Memoization:
+        Concept: Store the results of expensive function calls and reuse them when the same inputs occur again.
+        Implementation: Use a data structure like a hash table or array to cache previously computed results.
+    Dynamic Programming:
+        Concept: Break down a problem into simpler sub-problems and solve each sub-problem only once, storing their results.
+        Implementation: Use a table (array) to store solutions to sub-problems and build up the solution to the overall problem.
+    Tail Recursion:
+        Concept: Ensure that the recursive call is the last operation in the function, allowing the compiler or interpreter to optimize and reuse stack frames.
+        Implementation: Refactor the function to perform the recursive call as its last operation, making it eligible for tail call optimization.
+
