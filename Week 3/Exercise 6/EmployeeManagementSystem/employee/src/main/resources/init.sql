@@ -1,0 +1,32 @@
+INSERT INTO department (id, name) VALUES (1, 'Human Resources');
+INSERT INTO department (id, name) VALUES (2, 'Engineering');
+INSERT INTO department (id, name) VALUES (3, 'Marketing');
+INSERT INTO department (id, name) VALUES (4, 'Finance');
+INSERT INTO department (id, name) VALUES (5, 'Sales');
+INSERT INTO department (id, name) VALUES (6, 'IT');
+INSERT INTO department (id, name) VALUES (7, 'Customer Support');
+INSERT INTO department (id, name) VALUES (8, 'Operations');
+INSERT INTO department (id, name) VALUES (9, 'Legal');
+INSERT INTO department (id, name) VALUES (10, 'Research and Development');
+
+INSERT INTO employee (id, name, email, department_id) VALUES (1, 'John Doe', 'john.doe@example.com', 1);
+INSERT INTO employee (id, name, email, department_id) VALUES (2, 'Jane Smith', 'jane.smith@example.com', 2);
+INSERT INTO employee (id, name, email, department_id) VALUES (3, 'Alice Johnson', 'alice.johnson@example.com', 3);
+INSERT INTO employee (id, name, email, department_id) VALUES (4, 'Bob Brown', 'bob.brown@example.com', 2);
+INSERT INTO employee (id, name, email, department_id) VALUES (5, 'Charlie Davis', 'charlie.davis@example.com', 4);
+INSERT INTO employee (id, name, email, department_id) VALUES (6, 'Diana Evans', 'diana.evans@example.com', 5);
+INSERT INTO employee (id, name, email, department_id) VALUES (7, 'Ethan Foster', 'ethan.foster@example.com', 6);
+INSERT INTO employee (id, name, email, department_id) VALUES (8, 'Fiona Green', 'fiona.green@example.com', 7);
+INSERT INTO employee (id, name, email, department_id) VALUES (9, 'George Hill', 'george.hill@example.com', 8);
+INSERT INTO employee (id, name, email, department_id) VALUES (10, 'Hannah Ivy', 'hannah.ivy@example.com', 9);
+INSERT INTO employee (id, name, email, department_id) VALUES (11, 'Ian Jacobs', 'ian.jacobs@example.com', 10);
+INSERT INTO employee (id, name, email, department_id) VALUES (12, 'Jasmine King', 'jasmine.king@example.com', 1);
+INSERT INTO employee (id, name, email, department_id) VALUES (13, 'Kyle Lewis', 'kyle.lewis@example.com', 2);
+INSERT INTO employee (id, name, email, department_id) VALUES (14, 'Laura Miller', 'laura.miller@example.com', 3);
+INSERT INTO employee (id, name, email, department_id) VALUES (15, 'Michael Nelson', 'michael.nelson@example.com', 4);
+INSERT INTO employee (id, name, email, department_id) VALUES (16, 'Natalie Owens', 'natalie.owens@example.com', 5);
+INSERT INTO employee (id, name, email, department_id) VALUES (17, 'Oliver Perez', 'oliver.perez@example.com', 6);
+INSERT INTO employee (id, name, email, department_id) VALUES (18, 'Paula Quinn', 'paula.quinn@example.com', 7);
+INSERT INTO employee (id, name, email, department_id) VALUES (19, 'Quentin Roberts', 'quentin.roberts@example.com', 8);
+INSERT INTO employee (id, name, email, department_id) VALUES (20, 'Rachel Stewart', 'rachel.stewart@example.com', 9);
+
