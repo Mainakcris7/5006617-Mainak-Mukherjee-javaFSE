@@ -1,0 +1,22 @@
+1. Java 17 Baseline: Spring Boot 3 requires a minimum of Java 17, aligning with the latest LTS version of Java. This allows the use of modern language features and performance improvements introduced in Java 17.
+
+2. Improved Native Image Support: Spring Boot 3 enhances support for GraalVM native images, making it easier to build and run native executables with significantly reduced startup time and memory footprint.
+
+3. Updated Dependencies: Spring Boot 3 upgrades several core dependencies, including Spring Framework 6, Hibernate 6, and Jackson 2.14, bringing in new features, optimizations, and security updates.
+
+4. Observability Enhancements: New observability features have been introduced, including support for Micrometer, tracing improvements, and better integration with monitoring systems like Prometheus and OpenTelemetry.
+
+5. AOT (Ahead-of-Time) Compilation: Spring Boot 3 introduces better support for AOT compilation, reducing application startup time and resource usage by precomputing certain parts of the application.
+
+6. Jakarta EE 9+ Migration: Spring Boot 3 has migrated from the javax.* namespace to the jakarta.* namespace, aligning with Jakarta EE 9+ standards. This change impacts all related APIs and requires updates in your codebase.
+
+7. Enhanced Security: Improvements in security include updated OAuth 2.0 and OpenID Connect (OIDC) support, as well as better integration with Spring Security for securing applications more effectively.
+
+8. Kotlin 1.7 Support: Spring Boot 3 supports Kotlin 1.7, allowing developers to leverage the latest features and enhancements in the Kotlin programming language.
+
+9. Deprecated Features Removed: Several deprecated features and classes from earlier versions of Spring Boot have been removed, leading to cleaner and more modern code.
+
+10. Improved Docker Support: Spring Boot 3 offers better integration with Docker, making it easier to containerize Spring Boot applications with optimized Docker images and configurations.
+
+11. Enhanced Documentation and Tools: The documentation has been updated to reflect the new features and improvements, and tools like Spring Boot DevTools have been refined for better developer experience.
+
