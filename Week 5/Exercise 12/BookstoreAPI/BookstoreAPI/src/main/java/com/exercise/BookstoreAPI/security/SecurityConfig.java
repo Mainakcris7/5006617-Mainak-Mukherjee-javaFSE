@@ -1,6 +1,5 @@
 package com.exercise.BookstoreAPI.security;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
@@ -8,8 +7,9 @@ import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 import org.springframework.web.cors.CorsConfiguration;
+import org.springframework.web.cors.CorsConfigurationSource;
 import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
-import org.springframework.web.filter.CorsFilter;
+import java.util.Arrays;
 
 @Configuration
 public class SecurityConfig {
@@ -17,7 +17,6 @@ public class SecurityConfig {
     private final JWTAuthEntryPoint entryPoint;
     private final JwtAuthenticationFilter jwtFilter;
 
-    // Constructor-based injection
     public SecurityConfig(JWTAuthEntryPoint entryPoint, JwtAuthenticationFilter jwtFilter) {
         this.entryPoint = entryPoint;
         this.jwtFilter = jwtFilter;
@@ -26,6 +25,7 @@ public class SecurityConfig {
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http
                 .csrf(csrf -> csrf.disable())
+                .cors(cors -> cors.configurationSource(corsFilter()))
                 .authorizeHttpRequests(auth -> auth
                         .requestMatchers("/books/**")
                         .authenticated()
@@ -42,14 +42,13 @@ public class SecurityConfig {
     }
 
     @Bean
-    public CorsFilter corsFilter() {
+    public CorsConfigurationSource corsFilter() {
         UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
         CorsConfiguration config = new CorsConfiguration();
         config.setAllowCredentials(true);
         config.addAllowedOrigin("*");
-        config.addAllowedHeader("*");
-        config.addAllowedMethod("*");
+        config.setAllowedMethods(Arrays.asList("GET", "POST"));
         source.registerCorsConfiguration("/**", config);
-        return new CorsFilter(source);
+        return source;
     }
 }
